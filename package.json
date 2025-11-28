@@ -14,11 +14,13 @@
     "@tailwindcss/vite": "^4.1.17",
     "dayjs": "^1.11.19",
     "gsap": "^3.13.0",
+    "immer": "^11.0.1",
     "lucide-react": "^0.555.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-tooltip": "^5.30.0",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

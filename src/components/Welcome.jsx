@@ -23,7 +23,7 @@ const setupTextHover = (container, type) => {
   if (!container) return ()=>{}
 
   const letters = container.querySelectorAll("span");
-  const { min, max } = FONT_WEIGHTS[type];
+  const { min, max, default: base } = FONT_WEIGHTS[type];
 
   const animateLetter = (letter, weight, duration = 0.25) => {
     gsap.to(letter, {
@@ -48,7 +48,7 @@ const setupTextHover = (container, type) => {
       animateLetter(letter, weight);
     });
   };
-  const handleMouseLeave = (e) =>
+  const handleMouseLeave = () =>
     letters.forEach((letter) => animateLetter(letter, base, 0.3));
 
   container.addEventListener("mousemove", handleMouseMove);

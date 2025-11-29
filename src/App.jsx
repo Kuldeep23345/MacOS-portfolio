@@ -7,9 +7,11 @@ import Safari from "#windows/Safari"
 import Terminal from "#windows/Terminal"
 import Text from "#windows/Text"
 import Image from "#windows/Image"
+import Contact from "#windows/Contact"
 import gsap from "gsap"
 
 import { Draggable } from "gsap/Draggable"
+import Home from "#components/Home"
 gsap.registerPlugin(Draggable)
 
 
@@ -25,6 +27,8 @@ const App = () => {
       <Finder/>
       <Text/>
       <Image/>
+      <Contact/>
+      <Home/>
     </main>
 )
 }
